@@ -1,0 +1,47 @@
+[
+  {
+    "id": "tree_barrier",
+    "question": "do i need the barrier cream if i already have the night serum?",
+    "contextQuestion": "dry or oily?",
+    "branches": [
+      { "condition": "dry", "answer": "yes — layer it under the serum, especially in winter" },
+      { "condition": "oily", "answer": "skip it, the daily gel is enough for you" }
+    ],
+    "flatAnswer": null,
+    "autoSend": false,
+    "usedCount": 14,
+    "builtFrom": [
+      "babe if your skin is dry you layer the barrier cream under the serum, winter especially",
+      "oily girls can skip barrier, the daily gel covers you"
+    ],
+    "createdAt": "2026-09-20T12:00:00Z"
+  },
+  {
+    "id": "tree_shade",
+    "question": "what shade / foundation are you wearing?",
+    "contextQuestion": "what foundation are u in right now?",
+    "branches": [],
+    "flatAnswer": null,
+    "autoSend": false,
+    "usedCount": 22,
+    "builtFrom": [
+      "tell me what foundation you're in right now and i'll match you to my shade",
+      "i'm 04 in the second skin tint but shades don't transfer between brands, tell me yours first"
+    ],
+    "createdAt": "2026-09-19T09:30:00Z"
+  },
+  {
+    "id": "tree_glassdrop",
+    "question": "is glass drop worth £62?",
+    "contextQuestion": null,
+    "branches": [],
+    "flatAnswer": "glass drop is good. not £62 good. the night serum at £42 does the same job — i'd get that instead",
+    "autoSend": false,
+    "usedCount": 8,
+    "builtFrom": [
+      "glass drop review, one line: good. not £62 good.",
+      "night serum is the rebuy. £42 and it quietly outworks the hyped one"
+    ],
+    "createdAt": "2026-09-19T14:00:00Z"
+  }
+]

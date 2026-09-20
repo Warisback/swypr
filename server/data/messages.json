@@ -1,0 +1,838 @@
+[
+  {
+    "clusterId": "cluster_shade",
+    "matchedTreeId": "tree_shade",
+    "draft": {
+      "text": "what foundation are u in right now?",
+      "needsContext": true
+    },
+    "id": "msg_001",
+    "source": "seed",
+    "sender": {
+      "id": "seed_ellie",
+      "handle": "@ellie.mp"
+    },
+    "text": "what shade are u wearing in todays video???",
+    "receivedAt": "2026-09-20T11:42:00Z",
+    "status": "unanswered"
+  },
+  {
+    "clusterId": "cluster_shade",
+    "matchedTreeId": "tree_shade",
+    "draft": {
+      "text": "what foundation are u in right now?",
+      "needsContext": true
+    },
+    "id": "msg_002",
+    "source": "seed",
+    "sender": {
+      "id": "seed_tasha",
+      "handle": "@tashadoesfaces"
+    },
+    "text": "ur skin looked insane in the last reel what foundation is that",
+    "receivedAt": "2026-09-20T10:58:00Z",
+    "status": "unanswered"
+  },
+  {
+    "clusterId": "cluster_shade",
+    "matchedTreeId": "tree_shade",
+    "draft": {
+      "text": "what foundation are u in right now?",
+      "needsContext": true
+    },
+    "id": "msg_003",
+    "source": "seed",
+    "sender": {
+      "id": "seed_amara",
+      "handle": "@amara.xo"
+    },
+    "text": "hii what shade r u in the second skin tint im ur twin fr",
+    "receivedAt": "2026-09-20T10:31:00Z",
+    "status": "unanswered"
+  },
+  {
+    "clusterId": "cluster_barrier",
+    "matchedTreeId": "tree_barrier",
+    "draft": {
+      "text": "dry or oily?",
+      "needsContext": true
+    },
+    "id": "msg_004",
+    "source": "seed",
+    "sender": {
+      "id": "seed_pri",
+      "handle": "@priyagets.ready"
+    },
+    "text": "do i need the barrier cream if i already got the night serum",
+    "receivedAt": "2026-09-20T10:12:00Z",
+    "status": "unanswered"
+  },
+  {
+    "clusterId": "cluster_glassdrop",
+    "matchedTreeId": "tree_glassdrop",
+    "draft": {
+      "text": "glass drop is good. not £62 good. the night serum at £42 does the same job — i'd get that instead",
+      "needsContext": false
+    },
+    "id": "msg_005",
+    "source": "seed",
+    "sender": {
+      "id": "seed_jods",
+      "handle": "@jodie.attempts"
+    },
+    "text": "is glass drop actually worth the £62 or is it tiktok hype",
+    "receivedAt": "2026-09-20T09:47:00Z",
+    "status": "unanswered"
+  },
+  {
+    "clusterId": "cluster_shade",
+    "matchedTreeId": "tree_shade",
+    "draft": {
+      "text": "what foundation are u in right now?",
+      "needsContext": true
+    },
+    "id": "msg_006",
+    "source": "seed",
+    "sender": {
+      "id": "seed_mills",
+      "handle": "@millie.grace"
+    },
+    "text": "pls what foundation shade, ive been looking for a match forever 😭",
+    "receivedAt": "2026-09-20T09:20:00Z",
+    "status": "unanswered"
+  },
+  {
+    "clusterId": "cluster_cloud",
+    "matchedTreeId": null,
+    "draft": null,
+    "id": "msg_007",
+    "source": "seed",
+    "sender": {
+      "id": "seed_kaya",
+      "handle": "@kayaskin"
+    },
+    "text": "is cloud cream worth £38 im on the fence",
+    "receivedAt": "2026-09-20T08:55:00Z",
+    "status": "unanswered"
+  },
+  {
+    "clusterId": "cluster_budget_dry",
+    "matchedTreeId": null,
+    "draft": null,
+    "id": "msg_008",
+    "source": "seed",
+    "sender": {
+      "id": "seed_nims",
+      "handle": "@nimrah.j"
+    },
+    "text": "my skin is dry af and i have £60 max, what do i get",
+    "receivedAt": "2026-09-20T08:36:00Z",
+    "status": "unanswered"
+  },
+  {
+    "clusterId": "cluster_barrier",
+    "matchedTreeId": "tree_barrier",
+    "draft": {
+      "text": "dry or oily?",
+      "needsContext": true
+    },
+    "id": "msg_009",
+    "source": "seed",
+    "sender": {
+      "id": "seed_lou",
+      "handle": "@lou.lately"
+    },
+    "text": "is barrier cream + night serum too much for one face lol",
+    "receivedAt": "2026-09-20T08:14:00Z",
+    "status": "unanswered"
+  },
+  {
+    "clusterId": "cluster_shade",
+    "matchedTreeId": "tree_shade",
+    "draft": {
+      "text": "what foundation are u in right now?",
+      "needsContext": true
+    },
+    "id": "msg_010",
+    "source": "seed",
+    "sender": {
+      "id": "seed_dee",
+      "handle": "@deedee.tries"
+    },
+    "text": "shade match help!! we have the same undertone i think",
+    "receivedAt": "2026-09-20T07:49:00Z",
+    "status": "unanswered"
+  },
+  {
+    "clusterId": "cluster_glassdrop",
+    "matchedTreeId": "tree_glassdrop",
+    "draft": {
+      "text": "glass drop is good. not £62 good. the night serum at £42 does the same job — i'd get that instead",
+      "needsContext": false
+    },
+    "id": "msg_011",
+    "source": "seed",
+    "sender": {
+      "id": "seed_han",
+      "handle": "@hannah.rw"
+    },
+    "text": "glass drop... yay or nay. be honest",
+    "receivedAt": "2026-09-20T07:22:00Z",
+    "status": "unanswered"
+  },
+  {
+    "clusterId": "cluster_skin_type",
+    "matchedTreeId": null,
+    "draft": null,
+    "id": "msg_012",
+    "source": "seed",
+    "sender": {
+      "id": "seed_bex",
+      "handle": "@bexcabral"
+    },
+    "text": "how do i even find out my skin type lol",
+    "receivedAt": "2026-09-20T06:58:00Z",
+    "status": "unanswered"
+  },
+  {
+    "clusterId": "cluster_first_date",
+    "matchedTreeId": null,
+    "draft": null,
+    "id": "msg_013",
+    "source": "seed",
+    "sender": {
+      "id": "seed_ren",
+      "handle": "@renmakeup"
+    },
+    "text": "first date friday!!! what do i put on my face",
+    "receivedAt": "2026-09-20T06:30:00Z",
+    "status": "unanswered"
+  },
+  {
+    "clusterId": "cluster_barrier",
+    "matchedTreeId": "tree_barrier",
+    "draft": {
+      "text": "yes — layer it under the serum, especially in winter",
+      "needsContext": false
+    },
+    "id": "msg_014",
+    "source": "seed",
+    "sender": {
+      "id": "seed_soph",
+      "handle": "@sophlikesstuff"
+    },
+    "text": "barrier cream worth adding if my skin is so dry rn",
+    "receivedAt": "2026-09-19T22:41:00Z",
+    "status": "unanswered"
+  },
+  {
+    "clusterId": "cluster_routine",
+    "matchedTreeId": null,
+    "draft": null,
+    "id": "msg_015",
+    "source": "seed",
+    "sender": {
+      "id": "seed_gem",
+      "handle": "@gemma.dxb"
+    },
+    "text": "whats a good 2 product routine im lazy",
+    "receivedAt": "2026-09-19T22:05:00Z",
+    "status": "unanswered"
+  },
+  {
+    "clusterId": "cluster_payday",
+    "matchedTreeId": null,
+    "draft": null,
+    "id": "msg_016",
+    "source": "seed",
+    "sender": {
+      "id": "seed_tor",
+      "handle": "@toribakes"
+    },
+    "text": "its payday friday, what should i treat myself to",
+    "receivedAt": "2026-09-19T21:37:00Z",
+    "status": "unanswered"
+  },
+  {
+    "clusterId": "cluster_barrier",
+    "matchedTreeId": "tree_barrier",
+    "draft": {
+      "text": "dry or oily?",
+      "needsContext": true
+    },
+    "id": "msg_017",
+    "source": "seed",
+    "sender": {
+      "id": "seed_isla",
+      "handle": "@isla.mcw"
+    },
+    "text": "does the barrier cream go under or over the night serum",
+    "receivedAt": "2026-09-19T21:10:00Z",
+    "status": "unanswered"
+  },
+  {
+    "clusterId": "cluster_shade",
+    "matchedTreeId": "tree_shade",
+    "draft": {
+      "text": "what foundation are u in right now?",
+      "needsContext": true
+    },
+    "id": "msg_018",
+    "source": "seed",
+    "sender": {
+      "id": "seed_zara",
+      "handle": "@zarazoned"
+    },
+    "text": "what shade should i get in the tint im between 03 and 04",
+    "receivedAt": "2026-09-19T20:44:00Z",
+    "status": "unanswered"
+  },
+  {
+    "clusterId": "cluster_cloud",
+    "matchedTreeId": null,
+    "draft": null,
+    "id": "msg_019",
+    "source": "seed",
+    "sender": {
+      "id": "seed_cass",
+      "handle": "@cassie.films"
+    },
+    "text": "cloud cream — luxury or scam, one word",
+    "receivedAt": "2026-09-19T20:18:00Z",
+    "status": "unanswered"
+  },
+  {
+    "clusterId": "cluster_keep_one",
+    "matchedTreeId": null,
+    "draft": null,
+    "id": "msg_020",
+    "source": "seed",
+    "sender": {
+      "id": "seed_fern",
+      "handle": "@fern.and.co"
+    },
+    "text": "if u could only keep one product from ur whole routine what is it",
+    "receivedAt": "2026-09-19T19:52:00Z",
+    "status": "unanswered"
+  },
+  {
+    "clusterId": "cluster_glassdrop",
+    "matchedTreeId": "tree_glassdrop",
+    "draft": {
+      "text": "glass drop is good. not £62 good. the night serum at £42 does the same job — i'd get that instead",
+      "needsContext": false
+    },
+    "id": "msg_021",
+    "source": "seed",
+    "sender": {
+      "id": "seed_mim",
+      "handle": "@mimolette"
+    },
+    "text": "saw ur glass drop review, would U buy it again tho",
+    "receivedAt": "2026-09-19T19:26:00Z",
+    "status": "unanswered"
+  },
+  {
+    "clusterId": "cluster_barrier",
+    "matchedTreeId": "tree_barrier",
+    "draft": {
+      "text": "dry or oily?",
+      "needsContext": true
+    },
+    "id": "msg_022",
+    "source": "seed",
+    "sender": {
+      "id": "seed_ayo",
+      "handle": "@ayomide.b"
+    },
+    "text": "my face is flaky, night serum enough or add barrier cream?",
+    "receivedAt": "2026-09-19T18:59:00Z",
+    "status": "unanswered"
+  },
+  {
+    "clusterId": "cluster_skin_type",
+    "matchedTreeId": null,
+    "draft": null,
+    "id": "msg_023",
+    "source": "seed",
+    "sender": {
+      "id": "seed_effy",
+      "handle": "@effy.moon"
+    },
+    "text": "i genuinely dont know my skin type, where do i start",
+    "receivedAt": "2026-09-19T18:33:00Z",
+    "status": "unanswered"
+  },
+  {
+    "clusterId": "cluster_budget_dry",
+    "matchedTreeId": null,
+    "draft": null,
+    "id": "msg_024",
+    "source": "seed",
+    "sender": {
+      "id": "seed_nell",
+      "handle": "@nellrose"
+    },
+    "text": "dry skin starter kit under 60 quid??",
+    "receivedAt": "2026-09-19T18:07:00Z",
+    "status": "unanswered"
+  },
+  {
+    "clusterId": "cluster_shade",
+    "matchedTreeId": "tree_shade",
+    "draft": {
+      "text": "what foundation are u in right now?",
+      "needsContext": true
+    },
+    "id": "msg_025",
+    "source": "seed",
+    "sender": {
+      "id": "seed_wren",
+      "handle": "@wrenwatches"
+    },
+    "text": "sorry to be that girl but foundation deets? 🙏",
+    "receivedAt": "2026-09-19T17:40:00Z",
+    "status": "unanswered"
+  },
+  {
+    "clusterId": "cluster_cloud",
+    "matchedTreeId": null,
+    "draft": null,
+    "id": "msg_026",
+    "source": "seed",
+    "sender": {
+      "id": "seed_tam",
+      "handle": "@tamararuns"
+    },
+    "text": "does cloud cream break u out? worth it?",
+    "receivedAt": "2026-09-19T17:14:00Z",
+    "status": "unanswered"
+  },
+  {
+    "clusterId": "cluster_barrier",
+    "matchedTreeId": "tree_barrier",
+    "draft": {
+      "text": "skip it, the daily gel is enough for you",
+      "needsContext": false
+    },
+    "id": "msg_027",
+    "source": "seed",
+    "sender": {
+      "id": "seed_livvy",
+      "handle": "@livvy.lens"
+    },
+    "text": "barrier cream question — im oily, do i actually need it",
+    "receivedAt": "2026-09-19T16:48:00Z",
+    "status": "unanswered"
+  },
+  {
+    "clusterId": "cluster_glassdrop",
+    "matchedTreeId": "tree_glassdrop",
+    "draft": {
+      "text": "glass drop is good. not £62 good. the night serum at £42 does the same job — i'd get that instead",
+      "needsContext": false
+    },
+    "id": "msg_028",
+    "source": "seed",
+    "sender": {
+      "id": "seed_josie",
+      "handle": "@josie.jpg"
+    },
+    "text": "thoughts on glass drop for oily skin?",
+    "receivedAt": "2026-09-19T16:21:00Z",
+    "status": "unanswered"
+  },
+  {
+    "clusterId": "cluster_keep_one",
+    "matchedTreeId": null,
+    "draft": null,
+    "id": "msg_029",
+    "source": "seed",
+    "sender": {
+      "id": "seed_bella",
+      "handle": "@bellanotbelle"
+    },
+    "text": "u can only keep one skincare item forever. go",
+    "receivedAt": "2026-09-19T15:55:00Z",
+    "status": "unanswered"
+  },
+  {
+    "clusterId": "cluster_skin_type",
+    "matchedTreeId": null,
+    "draft": null,
+    "id": "msg_030",
+    "source": "seed",
+    "sender": {
+      "id": "seed_rue",
+      "handle": "@rue.reads"
+    },
+    "text": "my skin is sensitive idk what type tho, can i use ur stuff",
+    "receivedAt": "2026-09-19T15:29:00Z",
+    "status": "unanswered"
+  },
+  {
+    "clusterId": "cluster_budget_dry",
+    "matchedTreeId": null,
+    "draft": null,
+    "id": "msg_031",
+    "source": "seed",
+    "sender": {
+      "id": "seed_cleo",
+      "handle": "@cleopatra.no"
+    },
+    "text": "im dry + broke lol. best things under £60?",
+    "receivedAt": "2026-09-19T15:02:00Z",
+    "status": "unanswered"
+  },
+  {
+    "clusterId": "cluster_routine",
+    "matchedTreeId": null,
+    "draft": null,
+    "id": "msg_032",
+    "source": "seed",
+    "sender": {
+      "id": "seed_march",
+      "handle": "@marchelle.x"
+    },
+    "text": "simplest routine possible? i cannot do 10 steps",
+    "receivedAt": "2026-09-19T14:36:00Z",
+    "status": "unanswered"
+  },
+  {
+    "clusterId": "cluster_first_date",
+    "matchedTreeId": null,
+    "draft": null,
+    "id": "msg_033",
+    "source": "seed",
+    "sender": {
+      "id": "seed_pea",
+      "handle": "@sweetpea.ldn"
+    },
+    "text": "got a first date this week, need that glow asap",
+    "receivedAt": "2026-09-19T14:10:00Z",
+    "status": "unanswered"
+  },
+  {
+    "clusterId": "cluster_glassdrop",
+    "matchedTreeId": "tree_glassdrop",
+    "draft": {
+      "text": "glass drop is good. not £62 good. the night serum at £42 does the same job — i'd get that instead",
+      "needsContext": false
+    },
+    "id": "msg_034",
+    "source": "seed",
+    "sender": {
+      "id": "seed_kiki",
+      "handle": "@kiki.no.filter"
+    },
+    "text": "glass drop on payday or is that silly 💀",
+    "receivedAt": "2026-09-19T13:43:00Z",
+    "status": "unanswered"
+  },
+  {
+    "clusterId": "cluster_cloud",
+    "matchedTreeId": null,
+    "draft": null,
+    "id": "msg_035",
+    "source": "seed",
+    "sender": {
+      "id": "seed_indy",
+      "handle": "@indigo.mae"
+    },
+    "text": "cloud cream vs literally any cheaper moisturiser, is it worth",
+    "receivedAt": "2026-09-19T13:17:00Z",
+    "status": "unanswered"
+  },
+  {
+    "clusterId": "cluster_barrier",
+    "matchedTreeId": "tree_barrier",
+    "draft": {
+      "text": "dry or oily?",
+      "needsContext": true
+    },
+    "id": "msg_036",
+    "source": "seed",
+    "sender": {
+      "id": "seed_sal",
+      "handle": "@salomeinbloom"
+    },
+    "text": "got the night serum for xmas, do i need anything else with it",
+    "receivedAt": "2026-09-19T12:51:00Z",
+    "status": "unanswered"
+  },
+  {
+    "clusterId": "cluster_keep_one",
+    "matchedTreeId": null,
+    "draft": null,
+    "id": "msg_037",
+    "source": "seed",
+    "sender": {
+      "id": "seed_annie",
+      "handle": "@annie.afternoons"
+    },
+    "text": "had to pick one product for a desert island, which one",
+    "receivedAt": "2026-09-19T12:24:00Z",
+    "status": "unanswered"
+  },
+  {
+    "clusterId": "cluster_shade",
+    "matchedTreeId": "tree_shade",
+    "draft": {
+      "text": "what foundation are u in right now?",
+      "needsContext": true
+    },
+    "id": "msg_038",
+    "source": "seed",
+    "sender": {
+      "id": "seed_georg",
+      "handle": "@georgie.glow"
+    },
+    "text": "the shade u wear looks perfect on camera whats the code",
+    "receivedAt": "2026-09-19T11:58:00Z",
+    "status": "unanswered"
+  },
+  {
+    "clusterId": "cluster_skin_type",
+    "matchedTreeId": null,
+    "draft": null,
+    "id": "msg_039",
+    "source": "seed",
+    "sender": {
+      "id": "seed_remy",
+      "handle": "@remy.rambles"
+    },
+    "text": "skin type quiz says combo?? what does that even mean",
+    "receivedAt": "2026-09-19T11:32:00Z",
+    "status": "unanswered"
+  },
+  {
+    "clusterId": "cluster_budget_dry",
+    "matchedTreeId": null,
+    "draft": null,
+    "id": "msg_040",
+    "source": "seed",
+    "sender": {
+      "id": "seed_thea",
+      "handle": "@thea.tries.it"
+    },
+    "text": "student budget £60, skin so dry it hurts, help",
+    "receivedAt": "2026-09-19T11:05:00Z",
+    "status": "unanswered"
+  },
+  {
+    "clusterId": "cluster_glassdrop",
+    "matchedTreeId": "tree_glassdrop",
+    "draft": {
+      "text": "glass drop is good. not £62 good. the night serum at £42 does the same job — i'd get that instead",
+      "needsContext": false
+    },
+    "id": "msg_041",
+    "source": "seed",
+    "sender": {
+      "id": "seed_pip",
+      "handle": "@pippa.posts"
+    },
+    "text": "everyone is on abt glass drop rn. verdict?",
+    "receivedAt": "2026-09-19T10:39:00Z",
+    "status": "unanswered"
+  },
+  {
+    "clusterId": "cluster_barrier",
+    "matchedTreeId": "tree_barrier",
+    "draft": {
+      "text": "dry or oily?",
+      "needsContext": true
+    },
+    "id": "msg_042",
+    "source": "seed",
+    "sender": {
+      "id": "seed_mari",
+      "handle": "@marisol.mx"
+    },
+    "text": "is the barrier cream ok for winter? my cheeks r struggling",
+    "receivedAt": "2026-09-19T10:13:00Z",
+    "status": "unanswered"
+  },
+  {
+    "clusterId": "cluster_payday",
+    "matchedTreeId": null,
+    "draft": null,
+    "id": "msg_043",
+    "source": "seed",
+    "sender": {
+      "id": "seed_dot",
+      "handle": "@dorothyondemand"
+    },
+    "text": "payday haul incoming. top pick?",
+    "receivedAt": "2026-09-19T09:46:00Z",
+    "status": "unanswered"
+  },
+  {
+    "clusterId": "cluster_routine",
+    "matchedTreeId": null,
+    "draft": null,
+    "id": "msg_044",
+    "source": "seed",
+    "sender": {
+      "id": "seed_viv",
+      "handle": "@vivenne.k"
+    },
+    "text": "if my routine can only be 2 products what are they",
+    "receivedAt": "2026-09-19T09:20:00Z",
+    "status": "unanswered"
+  },
+  {
+    "clusterId": "cluster_wwyb",
+    "matchedTreeId": null,
+    "draft": null,
+    "id": "msg_045",
+    "source": "seed",
+    "sender": {
+      "id": "seed_star",
+      "handle": "@astrid.gets.it"
+    },
+    "text": "what would u buy first if u were me, total beginner",
+    "receivedAt": "2026-09-19T08:54:00Z",
+    "status": "unanswered"
+  },
+  {
+    "clusterId": "cluster_first_date",
+    "matchedTreeId": null,
+    "draft": null,
+    "id": "msg_046",
+    "source": "seed",
+    "sender": {
+      "id": "seed_moll",
+      "handle": "@mollymaybe"
+    },
+    "text": "FIRST DATE. friday. skin is not cooperating. help",
+    "receivedAt": "2026-09-19T08:27:00Z",
+    "status": "unanswered"
+  },
+  {
+    "clusterId": "cluster_cloud",
+    "matchedTreeId": null,
+    "draft": null,
+    "id": "msg_047",
+    "source": "seed",
+    "sender": {
+      "id": "seed_juno",
+      "handle": "@juno.junk.drawer"
+    },
+    "text": "been eyeing cloud cream for months. push me or stop me",
+    "receivedAt": "2026-09-18T21:41:00Z",
+    "status": "unanswered"
+  },
+  {
+    "clusterId": "cluster_keep_one",
+    "matchedTreeId": null,
+    "draft": null,
+    "id": "msg_048",
+    "source": "seed",
+    "sender": {
+      "id": "seed_faye",
+      "handle": "@faye.fwd"
+    },
+    "text": "pick one: ur fave product ever, only one allowed",
+    "receivedAt": "2026-09-18T20:15:00Z",
+    "status": "unanswered"
+  },
+  {
+    "clusterId": "cluster_payday",
+    "matchedTreeId": null,
+    "draft": null,
+    "id": "msg_049",
+    "source": "seed",
+    "sender": {
+      "id": "seed_bree",
+      "handle": "@breealready"
+    },
+    "text": "get paid friday, one treat, what is it",
+    "receivedAt": "2026-09-18T19:48:00Z",
+    "status": "unanswered"
+  },
+  {
+    "clusterId": "cluster_wwyb",
+    "matchedTreeId": null,
+    "draft": null,
+    "id": "msg_050",
+    "source": "seed",
+    "sender": {
+      "id": "seed_noor",
+      "handle": "@noor.notes"
+    },
+    "text": "if you were me with normal-ish skin what would you buy",
+    "receivedAt": "2026-09-18T18:22:00Z",
+    "status": "unanswered"
+  },
+  {
+    "clusterId": "cluster_wwyb",
+    "matchedTreeId": null,
+    "draft": null,
+    "id": "msg_051",
+    "source": "seed",
+    "sender": {
+      "id": "seed_saff",
+      "handle": "@saffysecond"
+    },
+    "text": "ok honestly what should i buy first from ur recs",
+    "receivedAt": "2026-09-18T16:56:00Z",
+    "status": "unanswered"
+  },
+  {
+    "clusterId": "cluster_routine",
+    "matchedTreeId": null,
+    "draft": null,
+    "id": "msg_052",
+    "source": "seed",
+    "sender": {
+      "id": "seed_edie",
+      "handle": "@edie.everyday"
+    },
+    "text": "morning routine in under a minute — possible?",
+    "receivedAt": "2026-09-18T15:30:00Z",
+    "status": "unanswered"
+  },
+  {
+    "clusterId": null,
+    "matchedTreeId": null,
+    "draft": null,
+    "id": "msg_053",
+    "source": "seed",
+    "sender": {
+      "id": "seed_romy",
+      "handle": "@romy.wears"
+    },
+    "text": "where is ur hoodie from in the last reel, need it",
+    "receivedAt": "2026-09-18T14:04:00Z",
+    "status": "unanswered"
+  },
+  {
+    "clusterId": null,
+    "matchedTreeId": null,
+    "draft": null,
+    "id": "msg_054",
+    "source": "seed",
+    "sender": {
+      "id": "seed_billie",
+      "handle": "@billiebackup"
+    },
+    "text": "are u coming to manchester anytime? meet n greet pls",
+    "receivedAt": "2026-09-18T12:38:00Z",
+    "status": "unanswered"
+  },
+  {
+    "clusterId": null,
+    "matchedTreeId": null,
+    "draft": null,
+    "id": "msg_055",
+    "source": "seed",
+    "sender": {
+      "id": "seed_carys",
+      "handle": "@carys.curls"
+    },
+    "text": "can u do a video on curly hair stuff?",
+    "receivedAt": "2026-09-18T11:12:00Z",
+    "status": "unanswered"
+  }
+]

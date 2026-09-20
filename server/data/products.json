@@ -1,0 +1,12 @@
+[
+  { "name": "Glass Drop", "price": 62, "type": "Serum", "skin": "All", "finish": "Dewy", "rating": 8.1, "note": "Good. Not £62 good." },
+  { "name": "Night Serum", "price": 42, "type": "Serum", "skin": "All", "finish": "Natural", "rating": 9.2, "note": "The rebuy. Does what Glass Drop does for £20 less." },
+  { "name": "Cloud Cream", "price": 38, "type": "Moisturiser", "skin": "Dry", "finish": "Dewy", "rating": 8.8, "note": "Worth it if your skin drinks moisturiser. Oily skin, walk past." },
+  { "name": "Barrier Cream", "price": 26, "type": "Moisturiser", "skin": "Dry", "finish": "Natural", "rating": 8.9, "note": "Boring. Works. Buy it before winter does its thing." },
+  { "name": "Daily Gel", "price": 24, "type": "Moisturiser", "skin": "Oily", "finish": "Natural", "rating": 8.4, "note": "The one oily skin actually finishes." },
+  { "name": "Second Skin Tint", "price": 28, "type": "Base", "skin": "All", "finish": "Natural", "rating": 8.6, "note": "12 shades. Maya wears 04." },
+  { "name": "Milk Cleanse", "price": 18, "type": "Cleanser", "skin": "All", "finish": "None", "rating": 7.9, "note": "Does the job. It's a cleanser." },
+  { "name": "Glow Veil SPF 50", "price": 24, "type": "SPF", "skin": "All", "finish": "Dewy", "rating": 9.0, "note": "Non-negotiable. Wear it." },
+  { "name": "Lip Slip", "price": 16, "type": "Lip", "skin": "All", "finish": "Glossy", "rating": 8.3, "note": "Fine. Every brand has one." },
+  { "name": "Reset Mask", "price": 30, "type": "Mask", "skin": "All", "finish": "None", "rating": 7.5, "note": "Once a week, not four." }
+]

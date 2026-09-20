@@ -1,5 +1,7 @@
 node_modules/
 dist/
+.pnpm-store/
+.openai/
 .env
 .env.local
 .sites-runtime/
