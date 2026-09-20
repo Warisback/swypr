@@ -69,6 +69,10 @@ async function mockRequest(path, method, body = {}) {
     return clone(message);
   }
   if (path === '/api/simulate-incoming' && method === 'POST') {
+    if (body?.reset) {
+      data.messages = data.messages.filter(message => !String(message.id).startsWith('live_'));
+      return clone({ ok: true, reset: true });
+    }
     const tree = data.trees.find(item => item.id === 'tree_glass');
     const message = { id: `live_${crypto.randomUUID()}`, source: 'live', sender: { id: 'tester_liv', handle: '@livwithit' }, text: 'maya quick one — glass drop. worth the hype or save my money?', receivedAt: new Date().toISOString(), status: tree?.autoSend ? 'auto_sent' : 'unanswered', clusterId: 'cluster_glass', matchedTreeId: tree?.id || null, draft: tree ? draftFor(tree) : null };
     if (tree?.autoSend) tree.usedCount += 1;

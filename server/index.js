@@ -31,6 +31,10 @@ app.use(treeRoutes);
 app.use(sendRoutes);
 app.use(webhookRoutes);
 
+// Serve the built frontend so one ngrok tunnel to :3001 shows the whole app
+// on the phone (run `pnpm run build` after frontend changes).
+app.use(express.static(path.join(ROOT, "dist")));
+
 app.use((req, res) => {
   res.status(404).json({ error: `no such route: ${req.method} ${req.path}` });
 });
@@ -54,7 +58,11 @@ async function boot() {
       trees: store.trees.length,
       products: store.products.length,
       mode: mode(),
-      anthropicKey: llmAvailable() ? "present" : "MISSING (drafts fall back to raw tree text)",
+      llm: process.env.ANTHROPIC_API_KEY
+        ? "anthropic"
+        : process.env.OPENAI_API_KEY
+          ? "openai"
+          : "NONE (drafts fall back to raw tree text)",
       whitelistedIgsids: whitelist().length,
     };
     console.log(`[swypr] server on http://localhost:${PORT}`);

@@ -19,11 +19,50 @@ function getClient() {
 }
 
 export function llmAvailable() {
-  return Boolean(process.env.ANTHROPIC_API_KEY);
+  return Boolean(process.env.ANTHROPIC_API_KEY || process.env.OPENAI_API_KEY);
+}
+
+// The team has no Anthropic key (2026-09-20): when only OPENAI_API_KEY is set,
+// LLM calls run through the OpenAI API with the same timeout + fallback rules.
+async function openaiText({ kind = "draft", system, user, maxTokens = 200, timeoutMs = 3000 }) {
+  const key = process.env.OPENAI_API_KEY;
+  if (!key) return null;
+  const model =
+    kind === "classify"
+      ? process.env.OPENAI_CLASSIFY_MODEL || "gpt-4o-mini"
+      : process.env.OPENAI_DRAFT_MODEL || "gpt-4o-mini";
+  try {
+    const ctrl = new AbortController();
+    const timer = setTimeout(() => ctrl.abort(), timeoutMs);
+    const res = await fetch("https://api.openai.com/v1/chat/completions", {
+      method: "POST",
+      headers: { "Content-Type": "application/json", Authorization: `Bearer ${key}` },
+      body: JSON.stringify({
+        model,
+        max_tokens: maxTokens,
+        temperature: 0.4,
+        messages: [
+          { role: "system", content: system },
+          { role: "user", content: user },
+        ],
+      }),
+      signal: ctrl.signal,
+    });
+    clearTimeout(timer);
+    if (!res.ok) return null;
+    const data = await res.json();
+    const text = data?.choices?.[0]?.message?.content?.trim();
+    return text || null;
+  } catch {
+    return null;
+  }
 }
 
 // Generic short-text completion with hard timeout. Returns null on any failure.
 export async function llmText({ kind = "draft", system, user, maxTokens = 200, timeoutMs = 3000 }) {
+  if (!process.env.ANTHROPIC_API_KEY && process.env.OPENAI_API_KEY) {
+    return openaiText({ kind, system, user, maxTokens, timeoutMs });
+  }
   const c = getClient();
   if (!c) return null;
   const requested =
@@ -102,6 +141,7 @@ function hashOf(s) {
 const MAYA_SYSTEM = [
   "you are maya, a beauty creator replying to a DM. rewrite the saved reply you are given so it reads like a fresh DM from you, with EXACTLY the same meaning, facts, prices and product names.",
   "voice: lowercase-leaning, dry, warm but decisive, short (1-2 sentences), zero corporate tone. no hashtags, no emojis unless the original had one, no sign-offs.",
+  "never open with filler like 'totally get that', 'great question' or 'i hear you' — maya answers straight away.",
   "never add a product, price, opinion or claim that is not in the saved reply. output only the rewritten reply text, nothing else.",
 ].join(" ");
 

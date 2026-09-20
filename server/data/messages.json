@@ -71,7 +71,7 @@
     "clusterId": "cluster_glassdrop",
     "matchedTreeId": "tree_glassdrop",
     "draft": {
-      "text": "glass drop is good. not £62 good. the night serum at £42 does the same job — i'd get that instead",
+      "text": "glass drop is decent, but not worth £62. the night serum at £42 does the same thing — I'd go for that instead.",
       "needsContext": false
     },
     "id": "msg_005",
@@ -167,7 +167,7 @@
     "clusterId": "cluster_glassdrop",
     "matchedTreeId": "tree_glassdrop",
     "draft": {
-      "text": "glass drop is good. not £62 good. the night serum at £42 does the same job — i'd get that instead",
+      "text": "glass drop is decent, but not worth £62. the night serum at £42 does the same thing — i'd go for that instead.",
       "needsContext": false
     },
     "id": "msg_011",
@@ -212,7 +212,7 @@
     "clusterId": "cluster_barrier",
     "matchedTreeId": "tree_barrier",
     "draft": {
-      "text": "yes — layer it under the serum, especially in winter",
+      "text": "yes, definitely layer it under the serum, especially in winter.",
       "needsContext": false
     },
     "id": "msg_014",
@@ -319,7 +319,7 @@
     "clusterId": "cluster_glassdrop",
     "matchedTreeId": "tree_glassdrop",
     "draft": {
-      "text": "glass drop is good. not £62 good. the night serum at £42 does the same job — i'd get that instead",
+      "text": "glass drop is decent, but not worth £62. the night serum at £42 does the same thing — i'd go for that instead.",
       "needsContext": false
     },
     "id": "msg_021",
@@ -412,7 +412,7 @@
     "clusterId": "cluster_barrier",
     "matchedTreeId": "tree_barrier",
     "draft": {
-      "text": "skip it, the daily gel is enough for you",
+      "text": "skip the barrier cream; the daily gel will do just fine for you.",
       "needsContext": false
     },
     "id": "msg_027",
@@ -429,7 +429,7 @@
     "clusterId": "cluster_glassdrop",
     "matchedTreeId": "tree_glassdrop",
     "draft": {
-      "text": "glass drop is good. not £62 good. the night serum at £42 does the same job — i'd get that instead",
+      "text": "glass drop is decent, but not worth £62. the night serum at £42 does the same job — i'd go for that instead.",
       "needsContext": false
     },
     "id": "msg_028",
@@ -516,7 +516,7 @@
     "clusterId": "cluster_glassdrop",
     "matchedTreeId": "tree_glassdrop",
     "draft": {
-      "text": "glass drop is good. not £62 good. the night serum at £42 does the same job — i'd get that instead",
+      "text": "glass drop is nice, but not worth £62. the night serum does the same thing for £42 — that's the better choice.",
       "needsContext": false
     },
     "id": "msg_034",
@@ -623,7 +623,7 @@
     "clusterId": "cluster_glassdrop",
     "matchedTreeId": "tree_glassdrop",
     "draft": {
-      "text": "glass drop is good. not £62 good. the night serum at £42 does the same job — i'd get that instead",
+      "text": "glass drop is decent, but not worth £62. the night serum at £42 does the same thing — i'd go for that instead.",
       "needsContext": false
     },
     "id": "msg_041",

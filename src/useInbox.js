@@ -107,6 +107,14 @@ export function useInbox() {
     try { await request('/api/simulate-incoming', { method: 'POST' }); setPromotedId(null); await Promise.all([refreshFreshQueue(), refreshBank()]); }
     catch (issue) { notify(issue.message, 'error'); }
   };
+  const resetDemo = async () => {
+    try {
+      await request('/api/simulate-incoming', { method: 'POST', body: { reset: true } });
+      setPromotedId(null);
+      await Promise.all([refreshFreshQueue(), refreshBank()]);
+      notify('scene reset. roll again.');
+    } catch (issue) { notify(issue.message, 'error'); }
+  };
   const promoteGlass = () => {
     const target = messages.find(item => /glass\s*drop/i.test(item.text) && item.status === 'unanswered' && !hiddenRef.current.has(item.id));
     if (!target) { notify('no Glass Drop questions waiting right now.'); return; }
@@ -130,5 +138,5 @@ export function useInbox() {
   const queue = groupBySender(messages.filter(item => item.status === 'unanswered' && !hidden.has(item.id)));
   const promoted = queue.find(item => item.id === promotedId);
   if (promoted) { queue.splice(queue.indexOf(promoted), 1); queue.unshift(promoted); }
-  return { messages, queue, bank, stats, loading, error, toast, drafts, uncertain, checkSend, allowRetry, refreshBank, reload, notify, actOnMessage, toggleAuto, saveTree, simulate, promoteGlass };
+  return { messages, queue, bank, stats, loading, error, toast, drafts, uncertain, checkSend, allowRetry, refreshBank, reload, notify, actOnMessage, toggleAuto, saveTree, simulate, promoteGlass, resetDemo };
 }

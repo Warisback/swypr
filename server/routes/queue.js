@@ -2,7 +2,7 @@
 // GET /api/queue never calls the LLM — drafts are prebaked or raw branch text.
 import { Router } from "express";
 import { store, getMessage, getTree, persistMessages } from "../lib/store.js";
-import { getClusters, unansweredThemes, matchInbound, openContextThread } from "../lib/matching.js";
+import { getClusters, unansweredThemes, matchInbound } from "../lib/matching.js";
 import { draftFor } from "../lib/drafts.js";
 import { deliverReply } from "../lib/instagram.js";
 
@@ -86,19 +86,23 @@ const PRESETS = {
     text: "dry!! like actually flaky rn",
   },
 };
-const PRESET_ORDER = ["barrier", "glassdrop", "offmap"];
-let presetCursor = 0;
+// Recorded-demo script (2026-09-20): each default press of L steps through this
+// sequence in order — barrier question, the same sender's "dry" reply, a glass
+// drop ask, then the honest off-map miss. R sends { reset: true } for retakes.
+const SCRIPT = ["barrier", "reply", "glassdrop", "offmap"];
+let scriptCursor = 0;
 let simCounter = 0;
 
 router.post("/api/simulate-incoming", async (req, res) => {
+  if (req.body?.reset) {
+    // clean the stage for a retake: drop every injected message, rewind the script
+    store.messages = store.messages.filter((m) => !String(m.sender?.id || "").startsWith("sim_"));
+    scriptCursor = 0;
+    persistMessages();
+    return res.json({ ok: true, reset: true });
+  }
   const presetId = req.body?.presetId && PRESETS[req.body.presetId] ? req.body.presetId : null;
-  // Demo beat: once the barrier clarifier has been sent to @nia.tries and she
-  // has nothing waiting, the next default simulate is her "dry" reply.
-  const niaWaiting = store.messages.some(
-    (m) => m.sender?.id === PRESETS.barrier.sender.id && m.status === "unanswered",
-  );
-  const replyDue = !presetId && !niaWaiting && openContextThread(PRESETS.barrier.sender.id);
-  const key = presetId || (replyDue ? "reply" : PRESET_ORDER[presetCursor++ % PRESET_ORDER.length]);
+  const key = presetId || SCRIPT[scriptCursor++ % SCRIPT.length];
   const preset = PRESETS[key];
 
   const message = {
