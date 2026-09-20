@@ -49,5 +49,25 @@
       "night serum is the rebuy. £42 and it quietly outworks the hyped one"
     ],
     "createdAt": "2026-09-19T14:00:00Z"
+  },
+  {
+    "id": "tree_cloud_cream",
+    "question": "is cloud cream worth £38 im on the fence",
+    "contextQuestion": "Thuj",
+    "branches": [
+      {
+        "condition": "Buh",
+        "answer": "Gjjv"
+      },
+      {
+        "condition": "Bh",
+        "answer": "Bbh"
+      }
+    ],
+    "flatAnswer": null,
+    "autoSend": false,
+    "usedCount": 0,
+    "builtFrom": [],
+    "createdAt": "2026-09-20T15:15:17.495Z"
   }
 ]
