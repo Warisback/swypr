@@ -447,15 +447,27 @@
   "unansweredThemes": [
     {
       "label": "a tutorial for hooded eyes",
-      "count": 28
+      "count": 28,
+      "examples": [
+        "could you do a tutorial for hooded eyes?",
+        "hooded eyes girlie here — does the liner trick even work for us?"
+      ]
     },
     {
       "label": "a makeup bag for under £50",
-      "count": 19
+      "count": 19,
+      "examples": [
+        "could you do a makeup bag for under £50?",
+        "starter makeup bag on a student budget… where do i even begin"
+      ]
     },
     {
       "label": "how to stop concealer creasing",
-      "count": 12
+      "count": 12,
+      "examples": [
+        "how do you stop concealer creasing?",
+        "my concealer creases by 11am no matter what. help"
+      ]
     }
   ]
 }

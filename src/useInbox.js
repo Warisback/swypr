@@ -1,5 +1,6 @@
 import { useCallback, useEffect, useRef, useState } from 'react';
 import { request, USE_MOCK } from './api';
+import { groupBySender } from './threads';
 
 export function useInbox() {
   const [messages, setMessages] = useState([]);
@@ -22,14 +23,20 @@ export function useInbox() {
     setToast({ text, tone, action });
     toastTimer.current = setTimeout(() => setToast(null), tone === 'error' ? 10000 : 3200);
   }, []);
+  const knownIds = useRef(null);
   const refreshQueue = useCallback(() => {
     if (inFlight.current) return inFlight.current;
     const task = request('/api/queue').then(data => {
       if (!Array.isArray(data?.messages)) throw new Error('your inbox couldn’t load. try again?');
+      if (knownIds.current) {
+        const fresh = data.messages.find(item => item.source === 'live' && item.status === 'unanswered' && !knownIds.current.has(item.id));
+        if (fresh) notify(`new reply from ${fresh.sender.handle}`);
+      }
+      knownIds.current = new Set(data.messages.map(item => item.id));
       setMessages(data.messages); setStats(data.stats); setError(''); return data;
     }).finally(() => { inFlight.current = null; });
     inFlight.current = task; return task;
-  }, []);
+  }, [notify]);
   const refreshBank = useCallback(async () => {
     const data = await request('/api/answer-bank');
     if (!Array.isArray(data?.trees)) throw new Error('your saved answers couldn’t load.');
@@ -97,7 +104,7 @@ export function useInbox() {
     notify('saved. a little less repeating yourself.');
   };
   const simulate = async () => {
-    try { await request('/api/simulate-incoming', { method: 'POST' }); await Promise.all([refreshFreshQueue(), refreshBank()]); }
+    try { await request('/api/simulate-incoming', { method: 'POST' }); setPromotedId(null); await Promise.all([refreshFreshQueue(), refreshBank()]); }
     catch (issue) { notify(issue.message, 'error'); }
   };
   const promoteGlass = () => {
@@ -120,7 +127,7 @@ export function useInbox() {
     return false;
   };
   const allowRetry = id => setUncertain(ids => new Set([...ids].filter(item => item !== id)));
-  const queue = messages.filter(item => item.status === 'unanswered' && !hidden.has(item.id));
+  const queue = groupBySender(messages.filter(item => item.status === 'unanswered' && !hidden.has(item.id)));
   const promoted = queue.find(item => item.id === promotedId);
   if (promoted) { queue.splice(queue.indexOf(promoted), 1); queue.unshift(promoted); }
   return { messages, queue, bank, stats, loading, error, toast, drafts, uncertain, checkSend, allowRetry, refreshBank, reload, notify, actOnMessage, toggleAuto, saveTree, simulate, promoteGlass };

@@ -4,8 +4,14 @@
     "question": "do i need the barrier cream if i already have the night serum?",
     "contextQuestion": "dry or oily?",
     "branches": [
-      { "condition": "dry", "answer": "yes — layer it under the serum, especially in winter" },
-      { "condition": "oily", "answer": "skip it, the daily gel is enough for you" }
+      {
+        "condition": "dry",
+        "answer": "yes — layer it under the serum, especially in winter"
+      },
+      {
+        "condition": "oily",
+        "answer": "skip it, the daily gel is enough for you"
+      }
     ],
     "flatAnswer": null,
     "autoSend": false,

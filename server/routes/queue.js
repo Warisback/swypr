@@ -2,7 +2,7 @@
 // GET /api/queue never calls the LLM — drafts are prebaked or raw branch text.
 import { Router } from "express";
 import { store, getMessage, getTree, persistMessages } from "../lib/store.js";
-import { matchMessage, treeForCluster, getClusters, unansweredThemes } from "../lib/matching.js";
+import { getClusters, unansweredThemes, matchInbound, openContextThread } from "../lib/matching.js";
 import { draftFor } from "../lib/drafts.js";
 import { deliverReply } from "../lib/instagram.js";
 
@@ -80,6 +80,11 @@ const PRESETS = {
     sender: { id: "sim_orla", handle: "@orla.overseas" },
     text: "do u ship to ireland?",
   },
+  // the second turn of the barrier conversation — same sender answers the clarifier
+  reply: {
+    sender: { id: "sim_nia", handle: "@nia.tries" },
+    text: "dry!! like actually flaky rn",
+  },
 };
 const PRESET_ORDER = ["barrier", "glassdrop", "offmap"];
 let presetCursor = 0;
@@ -87,7 +92,13 @@ let simCounter = 0;
 
 router.post("/api/simulate-incoming", async (req, res) => {
   const presetId = req.body?.presetId && PRESETS[req.body.presetId] ? req.body.presetId : null;
-  const key = presetId || PRESET_ORDER[presetCursor++ % PRESET_ORDER.length];
+  // Demo beat: once the barrier clarifier has been sent to @nia.tries and she
+  // has nothing waiting, the next default simulate is her "dry" reply.
+  const niaWaiting = store.messages.some(
+    (m) => m.sender?.id === PRESETS.barrier.sender.id && m.status === "unanswered",
+  );
+  const replyDue = !presetId && !niaWaiting && openContextThread(PRESETS.barrier.sender.id);
+  const key = presetId || (replyDue ? "reply" : PRESET_ORDER[presetCursor++ % PRESET_ORDER.length]);
   const preset = PRESETS[key];
 
   const message = {
@@ -103,10 +114,9 @@ router.post("/api/simulate-incoming", async (req, res) => {
   };
 
   // Canned presets are keyword-deterministic on purpose — no LLM classify.
-  message.clusterId = matchMessage(message.text);
-  const tree = treeForCluster(message.clusterId);
-  message.matchedTreeId = tree ? tree.id : null;
-  if (tree) message.draft = await draftFor(message, tree, { allowLLM: true });
+  // Thread context first: a reply to an open clarifying question gets the branch draft.
+  const { tree, context } = matchInbound(message);
+  if (tree) message.draft = await draftFor(message, tree, { context, allowLLM: true });
 
   store.messages.push(message);
   persistMessages();

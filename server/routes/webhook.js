@@ -4,7 +4,7 @@
 // anything without message.text, match + draft, push to queue as source "live".
 import { Router } from "express";
 import { store, persistMessages, appendWebhookLog } from "../lib/store.js";
-import { matchMessage, classifyWithLLM, treeForCluster } from "../lib/matching.js";
+import { classifyWithLLM, treeForCluster, matchInbound } from "../lib/matching.js";
 import { draftFor } from "../lib/drafts.js";
 import { deliverReply, isWhitelisted } from "../lib/instagram.js";
 
@@ -48,14 +48,15 @@ async function processEvent(ev) {
     draft: null,
   };
 
-  message.clusterId = matchMessage(message.text);
-  if (!message.clusterId) {
+  // Thread context first: a reply to an open clarifying question becomes the branch draft.
+  let { tree, context } = matchInbound(message);
+  if (!tree && !message.clusterId) {
     // live source + keyword miss is the one place the classifier runs
     message.clusterId = await classifyWithLLM(message.text).catch(() => null);
+    tree = treeForCluster(message.clusterId);
+    message.matchedTreeId = tree ? tree.id : null;
   }
-  const tree = treeForCluster(message.clusterId);
-  message.matchedTreeId = tree ? tree.id : null;
-  if (tree) message.draft = await draftFor(message, tree, { allowLLM: true });
+  if (tree) message.draft = await draftFor(message, tree, { context, allowLLM: true });
 
   store.messages.push(message);
   persistMessages();

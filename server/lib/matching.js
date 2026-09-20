@@ -2,8 +2,8 @@
 // group fully matches wins, so product-specific clusters sit above generic stems.
 // A keyword group is AND (every term must hit); groups within a cluster are OR.
 // The LLM (haiku) is only consulted for live-source messages when keywords miss.
-import { store } from "./store.js";
-import { llmText } from "./drafts.js";
+import { store, getTree } from "./store.js";
+import { llmText, detectContext } from "./drafts.js";
 
 const CLUSTER_DEFS = [
   {
@@ -159,7 +159,49 @@ export function unansweredThemes(limit = 3) {
     .filter((c) => !c.treeId)
     .sort((a, b) => b.count - a.count)
     .slice(0, limit)
-    .map((c) => ({ label: c.label, count: c.count }));
+    .map((c) => ({
+      label: c.label,
+      count: c.count,
+      // verbatim message texts from the corpus, never paraphrases
+      examples: store.messages
+        .filter((m) => m.clusterId === c.id)
+        .slice(0, 2)
+        .map((m) => m.text),
+    }));
+}
+
+// Conversations: if our last reply to this sender was a tree's clarifying
+// question, their next inbound message is read as the answer to it. Returns
+// the open tree, or null when the thread isn't waiting on context.
+export function openContextThread(senderId) {
+  for (let i = store.messages.length - 1; i >= 0; i--) {
+    const m = store.messages[i];
+    if (m.sender?.id !== senderId || !["answered", "auto_sent"].includes(m.status)) continue;
+    const tree = getTree(m.matchedTreeId);
+    if (!tree?.contextQuestion) return null;
+    const wasClarifier =
+      (m.reply?.text || "").trim() === tree.contextQuestion.trim() || m.draft?.needsContext === true;
+    return wasClarifier ? tree : null;
+  }
+  return null;
+}
+
+// Shared inbound pipeline for webhook + simulate: thread context first,
+// then keywords; sets clusterId/matchedTreeId and returns the matched tree.
+export function matchInbound(message) {
+  const openTree = openContextThread(message.sender?.id);
+  if (openTree) {
+    const ctx = detectContext(message, openTree);
+    if (ctx) {
+      message.clusterId = clusterForTree(openTree);
+      message.matchedTreeId = openTree.id;
+      return { tree: openTree, context: ctx };
+    }
+  }
+  message.clusterId = matchMessage(message.text);
+  const tree = treeForCluster(message.clusterId);
+  message.matchedTreeId = tree ? tree.id : null;
+  return { tree: tree || null, context: null };
 }
 
 // Haiku classification — live-source messages only, when keywords miss.
