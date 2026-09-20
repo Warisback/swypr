@@ -46,6 +46,10 @@ async function mockRequest(path, method, body = {}) {
     return clone(tree);
   }
   const treeMatch = path.match(/^\/api\/trees\/([^/]+)$/);
+  if (treeMatch && method === 'DELETE') {
+    data.trees = data.trees.filter(item => item.id !== decodeURIComponent(treeMatch[1]));
+    return clone({ ok: true });
+  }
   if (treeMatch && method === 'PATCH') {
     const tree = data.trees.find(item => item.id === decodeURIComponent(treeMatch[1]));
     if (!tree) throw new Error('that saved answer couldn’t be found.');

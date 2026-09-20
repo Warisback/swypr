@@ -14,8 +14,8 @@
       }
     ],
     "flatAnswer": null,
-    "autoSend": false,
-    "usedCount": 14,
+    "autoSend": true,
+    "usedCount": 17,
     "builtFrom": [
       "babe if your skin is dry you layer the barrier cream under the serum, winter especially",
       "oily girls can skip barrier, the daily gel covers you"
@@ -28,7 +28,7 @@
     "contextQuestion": "what foundation are u in right now?",
     "branches": [],
     "flatAnswer": null,
-    "autoSend": false,
+    "autoSend": true,
     "usedCount": 22,
     "builtFrom": [
       "tell me what foundation you're in right now and i'll match you to my shade",
@@ -51,23 +51,72 @@
     "createdAt": "2026-09-19T14:00:00Z"
   },
   {
-    "id": "tree_cloud_cream",
-    "question": "is cloud cream worth £38 im on the fence",
-    "contextQuestion": "Thuj",
+    "id": "tree_first_date",
+    "question": "first date friday — what do i put on my face?",
+    "contextQuestion": "natural or full glam?",
     "branches": [
       {
-        "condition": "Buh",
-        "answer": "Gjjv"
+        "condition": "natural",
+        "answer": "second skin tint and lip slip, done. you want to look like you on date two as well"
       },
       {
-        "condition": "Bh",
-        "answer": "Bbh"
+        "condition": "glam",
+        "answer": "glow veil first, tint over it, lip slip last. blot once before you leave and stop touching it x"
       }
     ],
     "flatAnswer": null,
     "autoSend": false,
-    "usedCount": 0,
-    "builtFrom": [],
-    "createdAt": "2026-09-20T15:15:17.495Z"
+    "usedCount": 5,
+    "builtFrom": [
+      "date face = tint + lip slip. thats it, you already look good",
+      "if we're going glam: spf under, build the tint, blot ONCE"
+    ],
+    "createdAt": "2026-09-19T16:20:00Z"
+  },
+  {
+    "id": "tree_routine",
+    "question": "what's the simplest routine?",
+    "contextQuestion": "morning or night?",
+    "branches": [
+      {
+        "condition": "morning",
+        "answer": "milk cleanse, daily gel, glow veil spf. two minutes, out the door"
+      },
+      {
+        "condition": "night",
+        "answer": "milk cleanse, night serum. that's the whole routine x"
+      }
+    ],
+    "flatAnswer": null,
+    "autoSend": false,
+    "usedCount": 11,
+    "builtFrom": [
+      "morning: cleanse, gel, spf. night: cleanse, serum. stop scrolling routines",
+      "you don't need 10 steps. you need consistency x"
+    ],
+    "createdAt": "2026-09-18T19:45:00Z"
+  },
+  {
+    "id": "tree_skin_type",
+    "question": "how do i find out my skin type?",
+    "contextQuestion": "an hour after washing your face — tight or shiny?",
+    "branches": [
+      {
+        "condition": "tight",
+        "answer": "that's dry. barrier cream and the night serum are your lane, be gentle with it"
+      },
+      {
+        "condition": "shiny",
+        "answer": "oily. daily gel is enough — and stop overwashing, that makes it worse x"
+      }
+    ],
+    "flatAnswer": null,
+    "autoSend": false,
+    "usedCount": 7,
+    "builtFrom": [
+      "wash your face, wait an hour, no products. tight = dry, shiny = oily. that's the whole test",
+      "sensitive just means listen to it. patch test, go slow x"
+    ],
+    "createdAt": "2026-09-18T13:10:00Z"
   }
 ]

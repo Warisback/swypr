@@ -181,7 +181,7 @@
     },
     "text": "glass drop... yay or nay. be honest",
     "receivedAt": "2026-09-20T07:22:00Z",
-    "status": "unanswered"
+    "status": "skipped"
   },
   {
     "clusterId": "cluster_skin_type",
@@ -195,7 +195,7 @@
     },
     "text": "how do i even find out my skin type lol",
     "receivedAt": "2026-09-20T06:58:00Z",
-    "status": "unanswered"
+    "status": "skipped"
   },
   {
     "clusterId": "cluster_first_date",
@@ -209,7 +209,7 @@
     },
     "text": "first date friday!!! what do i put on my face",
     "receivedAt": "2026-09-20T06:30:00Z",
-    "status": "unanswered"
+    "status": "skipped"
   },
   {
     "clusterId": "cluster_barrier",
@@ -226,7 +226,13 @@
     },
     "text": "barrier cream worth adding if my skin is so dry rn",
     "receivedAt": "2026-09-19T22:41:00Z",
-    "status": "unanswered"
+    "status": "auto_sent",
+    "reply": {
+      "text": "yes, definitely layer it under the serum, especially in winter.",
+      "sentAt": "2026-09-20T16:14:43.908Z",
+      "via": "simulated",
+      "auto": true
+    }
   },
   {
     "clusterId": "cluster_routine",
@@ -240,7 +246,7 @@
     },
     "text": "whats a good 2 product routine im lazy",
     "receivedAt": "2026-09-19T22:05:00Z",
-    "status": "unanswered"
+    "status": "skipped"
   },
   {
     "clusterId": "cluster_payday",
@@ -254,7 +260,7 @@
     },
     "text": "its payday friday, what should i treat myself to",
     "receivedAt": "2026-09-19T21:37:00Z",
-    "status": "unanswered"
+    "status": "skipped"
   },
   {
     "clusterId": "cluster_barrier",
@@ -271,7 +277,7 @@
     },
     "text": "does the barrier cream go under or over the night serum",
     "receivedAt": "2026-09-19T21:10:00Z",
-    "status": "unanswered"
+    "status": "skipped"
   },
   {
     "clusterId": "cluster_shade",
@@ -288,7 +294,7 @@
     },
     "text": "what shade should i get in the tint im between 03 and 04",
     "receivedAt": "2026-09-19T20:44:00Z",
-    "status": "unanswered"
+    "status": "skipped"
   },
   {
     "clusterId": "cluster_cloud",
@@ -305,7 +311,7 @@
     },
     "text": "cloud cream — luxury or scam, one word",
     "receivedAt": "2026-09-19T20:18:00Z",
-    "status": "unanswered"
+    "status": "skipped"
   },
   {
     "clusterId": "cluster_keep_one",
@@ -319,7 +325,7 @@
     },
     "text": "if u could only keep one product from ur whole routine what is it",
     "receivedAt": "2026-09-19T19:52:00Z",
-    "status": "unanswered"
+    "status": "skipped"
   },
   {
     "clusterId": "cluster_glassdrop",
@@ -336,7 +342,7 @@
     },
     "text": "saw ur glass drop review, would U buy it again tho",
     "receivedAt": "2026-09-19T19:26:00Z",
-    "status": "unanswered"
+    "status": "skipped"
   },
   {
     "clusterId": "cluster_barrier",
@@ -353,12 +359,21 @@
     },
     "text": "my face is flaky, night serum enough or add barrier cream?",
     "receivedAt": "2026-09-19T18:59:00Z",
-    "status": "unanswered"
+    "status": "answered",
+    "reply": {
+      "text": "dry or oily?",
+      "sentAt": "2026-09-20T16:19:04.502Z",
+      "via": "simulated",
+      "auto": false
+    }
   },
   {
     "clusterId": "cluster_skin_type",
-    "matchedTreeId": null,
-    "draft": null,
+    "matchedTreeId": "tree_skin_type",
+    "draft": {
+      "text": "an hour after washing your face — tight or shiny?",
+      "needsContext": true
+    },
     "id": "msg_023",
     "source": "seed",
     "sender": {
@@ -402,11 +417,8 @@
   },
   {
     "clusterId": "cluster_cloud",
-    "matchedTreeId": "tree_cloud_cream",
-    "draft": {
-      "text": "Thuj",
-      "needsContext": true
-    },
+    "matchedTreeId": null,
+    "draft": null,
     "id": "msg_026",
     "source": "seed",
     "sender": {
@@ -432,7 +444,13 @@
     },
     "text": "barrier cream question — im oily, do i actually need it",
     "receivedAt": "2026-09-19T16:48:00Z",
-    "status": "unanswered"
+    "status": "auto_sent",
+    "reply": {
+      "text": "skip the barrier cream; the daily gel will do just fine for you.",
+      "sentAt": "2026-09-20T16:14:43.911Z",
+      "via": "simulated",
+      "auto": true
+    }
   },
   {
     "clusterId": "cluster_glassdrop",
@@ -467,8 +485,11 @@
   },
   {
     "clusterId": "cluster_skin_type",
-    "matchedTreeId": null,
-    "draft": null,
+    "matchedTreeId": "tree_skin_type",
+    "draft": {
+      "text": "an hour after washing your face — tight or shiny?",
+      "needsContext": true
+    },
     "id": "msg_030",
     "source": "seed",
     "sender": {
@@ -495,8 +516,11 @@
   },
   {
     "clusterId": "cluster_routine",
-    "matchedTreeId": null,
-    "draft": null,
+    "matchedTreeId": "tree_routine",
+    "draft": {
+      "text": "morning or night?",
+      "needsContext": true
+    },
     "id": "msg_032",
     "source": "seed",
     "sender": {
@@ -509,8 +533,11 @@
   },
   {
     "clusterId": "cluster_first_date",
-    "matchedTreeId": null,
-    "draft": null,
+    "matchedTreeId": "tree_first_date",
+    "draft": {
+      "text": "natural or full glam?",
+      "needsContext": true
+    },
     "id": "msg_033",
     "source": "seed",
     "sender": {
@@ -540,11 +567,8 @@
   },
   {
     "clusterId": "cluster_cloud",
-    "matchedTreeId": "tree_cloud_cream",
-    "draft": {
-      "text": "Thuj",
-      "needsContext": true
-    },
+    "matchedTreeId": null,
+    "draft": null,
     "id": "msg_035",
     "source": "seed",
     "sender": {
@@ -605,8 +629,11 @@
   },
   {
     "clusterId": "cluster_skin_type",
-    "matchedTreeId": null,
-    "draft": null,
+    "matchedTreeId": "tree_skin_type",
+    "draft": {
+      "text": "an hour after washing your face — tight or shiny?",
+      "needsContext": true
+    },
     "id": "msg_039",
     "source": "seed",
     "sender": {
@@ -681,8 +708,11 @@
   },
   {
     "clusterId": "cluster_routine",
-    "matchedTreeId": null,
-    "draft": null,
+    "matchedTreeId": "tree_routine",
+    "draft": {
+      "text": "morning or night?",
+      "needsContext": true
+    },
     "id": "msg_044",
     "source": "seed",
     "sender": {
@@ -709,8 +739,11 @@
   },
   {
     "clusterId": "cluster_first_date",
-    "matchedTreeId": null,
-    "draft": null,
+    "matchedTreeId": "tree_first_date",
+    "draft": {
+      "text": "natural or full glam?",
+      "needsContext": true
+    },
     "id": "msg_046",
     "source": "seed",
     "sender": {
@@ -723,11 +756,8 @@
   },
   {
     "clusterId": "cluster_cloud",
-    "matchedTreeId": "tree_cloud_cream",
-    "draft": {
-      "text": "Thuj",
-      "needsContext": true
-    },
+    "matchedTreeId": null,
+    "draft": null,
     "id": "msg_047",
     "source": "seed",
     "sender": {
@@ -796,8 +826,11 @@
   },
   {
     "clusterId": "cluster_routine",
-    "matchedTreeId": null,
-    "draft": null,
+    "matchedTreeId": "tree_routine",
+    "draft": {
+      "text": "milk cleanse, daily gel, glow veil spf. two minutes, out the door",
+      "needsContext": false
+    },
     "id": "msg_052",
     "source": "seed",
     "sender": {
