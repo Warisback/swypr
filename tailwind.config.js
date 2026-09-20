@@ -1,0 +1,1 @@
+export default { content: ['./index.html', './src/**/*.{js,jsx}'], theme: { extend: { colors: { ink: 'var(--ink)', lilac: 'var(--lilac)', peach: 'var(--peach)' }, fontFamily: { sans: ['DM Sans', 'sans-serif'] } } }, plugins: [] };

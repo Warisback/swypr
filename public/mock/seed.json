@@ -1,0 +1,461 @@
+{
+  "messages": [
+    {
+      "id": "msg_001",
+      "source": "seed",
+      "sender": {
+        "id": "seed_ellie_mp",
+        "handle": "@ellie.mp"
+      },
+      "text": "do i need the barrier cream if i already have the night serum?",
+      "receivedAt": "2026-09-20T12:55:00Z",
+      "status": "unanswered",
+      "clusterId": "cluster_barrier",
+      "matchedTreeId": "tree_barrier",
+      "draft": {
+        "text": "dry or oily?",
+        "needsContext": true
+      }
+    },
+    {
+      "id": "msg_002",
+      "source": "seed",
+      "sender": {
+        "id": "seed_livwithit",
+        "handle": "@livwithit"
+      },
+      "text": "what shade are u wearing in todays video???",
+      "receivedAt": "2026-09-20T12:48:00Z",
+      "status": "unanswered",
+      "clusterId": "cluster_shade",
+      "matchedTreeId": "tree_shade",
+      "draft": {
+        "text": "what foundation are u in right now?",
+        "needsContext": true
+      }
+    },
+    {
+      "id": "msg_003",
+      "source": "seed",
+      "sender": {
+        "id": "seed_nina_rose",
+        "handle": "@nina.rose"
+      },
+      "text": "be honest is glass drop actually worth £62 😭",
+      "receivedAt": "2026-09-20T12:41:00Z",
+      "status": "unanswered",
+      "clusterId": "cluster_glass",
+      "matchedTreeId": "tree_glass",
+      "draft": {
+        "text": "good. not £62 good. i'd get the night serum at £42 and keep the £20. same glow, less financial damage x",
+        "needsContext": false
+      }
+    },
+    {
+      "id": "msg_004",
+      "source": "seed",
+      "sender": {
+        "id": "seed_jess_creates",
+        "handle": "@jess.creates"
+      },
+      "text": "payday tomorrow… if i buy ONE thing what should it be",
+      "receivedAt": "2026-09-20T12:34:00Z",
+      "status": "unanswered",
+      "clusterId": "cluster_payday",
+      "matchedTreeId": "tree_payday",
+      "draft": {
+        "text": "the daily gel. use what you've got first, then start there. payday isn't a reason to buy an entire shelf x",
+        "needsContext": false
+      }
+    },
+    {
+      "id": "msg_005",
+      "source": "seed",
+      "sender": {
+        "id": "seed_soph_ie",
+        "handle": "@soph.ie"
+      },
+      "text": "if you could only keep 2 products what would they be?",
+      "receivedAt": "2026-09-20T12:27:00Z",
+      "status": "unanswered",
+      "clusterId": "cluster_routine",
+      "matchedTreeId": "tree_routine",
+      "draft": {
+        "text": "daily gel in the morning, night serum before bed. keep your SPF too — that one isn't optional x",
+        "needsContext": false
+      }
+    },
+    {
+      "id": "msg_006",
+      "source": "seed",
+      "sender": {
+        "id": "seed_amelia_k",
+        "handle": "@amelia.k"
+      },
+      "text": "could you do a tutorial for hooded eyes?",
+      "receivedAt": "2026-09-20T12:20:00Z",
+      "status": "unanswered",
+      "clusterId": null,
+      "matchedTreeId": null,
+      "draft": null
+    },
+    {
+      "id": "msg_007",
+      "source": "seed",
+      "sender": {
+        "id": "seed_ria_x",
+        "handle": "@ria.x"
+      },
+      "text": "is the barrier cream too much if i use the serum too?",
+      "receivedAt": "2026-09-20T11:55:00Z",
+      "status": "unanswered",
+      "clusterId": "cluster_barrier",
+      "matchedTreeId": "tree_barrier",
+      "draft": {
+        "text": "dry or oily?",
+        "needsContext": true
+      }
+    },
+    {
+      "id": "msg_008",
+      "source": "seed",
+      "sender": {
+        "id": "seed_charlotte_lee",
+        "handle": "@charlotte.lee"
+      },
+      "text": "pls tell me your foundation shade!!",
+      "receivedAt": "2026-09-20T11:48:00Z",
+      "status": "unanswered",
+      "clusterId": "cluster_shade",
+      "matchedTreeId": "tree_shade",
+      "draft": {
+        "text": "what foundation are u in right now?",
+        "needsContext": true
+      }
+    },
+    {
+      "id": "msg_009",
+      "source": "seed",
+      "sender": {
+        "id": "seed_flo_and_co",
+        "handle": "@flo.and.co"
+      },
+      "text": "glass drop or the night serum? can't justify both",
+      "receivedAt": "2026-09-20T11:41:00Z",
+      "status": "unanswered",
+      "clusterId": "cluster_glass",
+      "matchedTreeId": "tree_glass",
+      "draft": {
+        "text": "good. not £62 good. i'd get the night serum at £42 and keep the £20. same glow, less financial damage x",
+        "needsContext": false
+      }
+    },
+    {
+      "id": "msg_010",
+      "source": "seed",
+      "sender": {
+        "id": "seed_bea_s",
+        "handle": "@bea.s"
+      },
+      "text": "need a payday treat. what are we getting?",
+      "receivedAt": "2026-09-20T11:34:00Z",
+      "status": "unanswered",
+      "clusterId": "cluster_payday",
+      "matchedTreeId": "tree_payday",
+      "draft": {
+        "text": "the daily gel. use what you've got first, then start there. payday isn't a reason to buy an entire shelf x",
+        "needsContext": false
+      }
+    },
+    {
+      "id": "msg_011",
+      "source": "seed",
+      "sender": {
+        "id": "seed_maisy_j",
+        "handle": "@maisy.j"
+      },
+      "text": "i have 5 mins in the morning. simplest routine?",
+      "receivedAt": "2026-09-20T11:27:00Z",
+      "status": "unanswered",
+      "clusterId": "cluster_routine",
+      "matchedTreeId": "tree_routine",
+      "draft": {
+        "text": "daily gel in the morning, night serum before bed. keep your SPF too — that one isn't optional x",
+        "needsContext": false
+      }
+    },
+    {
+      "id": "msg_012",
+      "source": "seed",
+      "sender": {
+        "id": "seed_freya_r",
+        "handle": "@freya.r"
+      },
+      "text": "does your spf pill under makeup? what order do u do",
+      "receivedAt": "2026-09-20T11:20:00Z",
+      "status": "unanswered",
+      "clusterId": "cluster_spf",
+      "matchedTreeId": "tree_spf",
+      "draft": {
+        "text": "every day. let it settle before you do your base — that's the bit everyone rushes x",
+        "needsContext": false
+      }
+    },
+    {
+      "id": "msg_013",
+      "source": "seed",
+      "sender": {
+        "id": "seed_izzy_makeup",
+        "handle": "@izzy.makeup"
+      },
+      "text": "barrier cream AND night serum or is that overkill",
+      "receivedAt": "2026-09-20T10:55:00Z",
+      "status": "unanswered",
+      "clusterId": "cluster_barrier",
+      "matchedTreeId": "tree_barrier",
+      "draft": {
+        "text": "dry or oily?",
+        "needsContext": true
+      }
+    },
+    {
+      "id": "msg_014",
+      "source": "seed",
+      "sender": {
+        "id": "seed_hannah_p",
+        "handle": "@hannah.p"
+      },
+      "text": "that base in your latest reel!! shade please x",
+      "receivedAt": "2026-09-20T10:48:00Z",
+      "status": "unanswered",
+      "clusterId": "cluster_shade",
+      "matchedTreeId": "tree_shade",
+      "draft": {
+        "text": "what foundation are u in right now?",
+        "needsContext": true
+      }
+    },
+    {
+      "id": "msg_015",
+      "source": "seed",
+      "sender": {
+        "id": "seed_evie_g",
+        "handle": "@evie.g"
+      },
+      "text": "is there a cheaper alternative to glass drop?",
+      "receivedAt": "2026-09-20T10:41:00Z",
+      "status": "unanswered",
+      "clusterId": "cluster_glass",
+      "matchedTreeId": "tree_glass",
+      "draft": {
+        "text": "good. not £62 good. i'd get the night serum at £42 and keep the £20. same glow, less financial damage x",
+        "needsContext": false
+      }
+    },
+    {
+      "id": "msg_016",
+      "source": "seed",
+      "sender": {
+        "id": "seed_aliceincolour",
+        "handle": "@aliceincolour"
+      },
+      "text": "could you do a makeup bag for under £50?",
+      "receivedAt": "2026-09-20T10:34:00Z",
+      "status": "unanswered",
+      "clusterId": null,
+      "matchedTreeId": null,
+      "draft": null
+    },
+    {
+      "id": "msg_017",
+      "source": "seed",
+      "sender": {
+        "id": "seed_meg_skin",
+        "handle": "@meg.skin"
+      },
+      "text": "how do you stop concealer creasing?",
+      "receivedAt": "2026-09-20T10:27:00Z",
+      "status": "unanswered",
+      "clusterId": null,
+      "matchedTreeId": null,
+      "draft": null
+    },
+    {
+      "id": "msg_018",
+      "source": "seed",
+      "sender": {
+        "id": "seed_lola_b",
+        "handle": "@lola.b"
+      },
+      "text": "do i really need spf when it's cloudy?",
+      "receivedAt": "2026-09-20T10:20:00Z",
+      "status": "auto_sent",
+      "clusterId": "cluster_spf",
+      "matchedTreeId": "tree_spf",
+      "draft": {
+        "text": "every day. let it settle before you do your base — that's the bit everyone rushes x",
+        "needsContext": false
+      }
+    },
+    {
+      "id": "msg_019",
+      "source": "seed",
+      "sender": {
+        "id": "seed_tash_x",
+        "handle": "@tash.x"
+      },
+      "text": "what order for a super simple routine?",
+      "receivedAt": "2026-09-20T09:55:00Z",
+      "status": "auto_sent",
+      "clusterId": "cluster_routine",
+      "matchedTreeId": "tree_routine",
+      "draft": {
+        "text": "daily gel in the morning, night serum before bed. keep your SPF too — that one isn't optional x",
+        "needsContext": false
+      }
+    },
+    {
+      "id": "msg_020",
+      "source": "seed",
+      "sender": {
+        "id": "seed_rubylooks",
+        "handle": "@rubylooks"
+      },
+      "text": "SPF before makeup right?",
+      "receivedAt": "2026-09-20T09:48:00Z",
+      "status": "auto_sent",
+      "clusterId": "cluster_spf",
+      "matchedTreeId": "tree_spf",
+      "draft": {
+        "text": "every day. let it settle before you do your base — that's the bit everyone rushes x",
+        "needsContext": false
+      }
+    }
+  ],
+  "trees": [
+    {
+      "id": "tree_barrier",
+      "question": "do i need the barrier cream if i already have the night serum?",
+      "contextQuestion": "dry or oily?",
+      "branches": [
+        {
+          "condition": "dry",
+          "answer": "yes — layer it under the serum, especially in winter. a little goes a long way x"
+        },
+        {
+          "condition": "oily",
+          "answer": "skip it, the daily gel is enough for you. no need to make your routine a full-time job x"
+        }
+      ],
+      "flatAnswer": null,
+      "autoSend": false,
+      "usedCount": 14,
+      "builtFrom": [
+        "dry skin? barrier cream under the serum. especially in winter x",
+        "if you're oily i'd skip it. the daily gel does enough."
+      ],
+      "createdAt": "2026-09-19T12:00:00Z"
+    },
+    {
+      "id": "tree_shade",
+      "question": "what shade are you wearing?",
+      "contextQuestion": "what foundation are u in right now?",
+      "branches": [
+        {
+          "condition": "light / neutral",
+          "answer": "i'm wearing shade 3 — neutral, not too pink. swatch in daylight before you commit x"
+        },
+        {
+          "condition": "medium / warm",
+          "answer": "try shade 5 first. a little warmer than mine, so swatch on your jaw in daylight x"
+        }
+      ],
+      "flatAnswer": null,
+      "autoSend": false,
+      "usedCount": 38,
+      "builtFrom": [
+        "shade 3 today! always check it in daylight though x",
+        "what foundation and shade are you using now? that gives me a better starting point."
+      ],
+      "createdAt": "2026-09-18T12:00:00Z"
+    },
+    {
+      "id": "tree_glass",
+      "question": "is Glass Drop actually worth £62?",
+      "contextQuestion": null,
+      "branches": [],
+      "flatAnswer": "good. not £62 good. i'd get the night serum at £42 and keep the £20. same glow, less financial damage x",
+      "autoSend": false,
+      "usedCount": 23,
+      "builtFrom": [
+        "Glass Drop? good. not £62 good.",
+        "night serum at £42. save the twenty quid."
+      ],
+      "createdAt": "2026-09-18T14:00:00Z"
+    },
+    {
+      "id": "tree_payday",
+      "question": "what would you buy first on payday?",
+      "contextQuestion": null,
+      "branches": [],
+      "flatAnswer": "the daily gel. use what you've got first, then start there. payday isn't a reason to buy an entire shelf x",
+      "autoSend": false,
+      "usedCount": 19,
+      "builtFrom": [
+        "daily gel first. simple, does the job.",
+        "finish what's already in your bathroom before you go shopping x"
+      ],
+      "createdAt": "2026-09-17T14:00:00Z"
+    },
+    {
+      "id": "tree_routine",
+      "question": "what's your two-product routine?",
+      "contextQuestion": null,
+      "branches": [],
+      "flatAnswer": "daily gel in the morning, night serum before bed. keep your SPF too — that one isn't optional x",
+      "autoSend": true,
+      "usedCount": 46,
+      "builtFrom": [
+        "daily gel + night serum. that's the routine.",
+        "don't bin your SPF just because we're keeping it simple x"
+      ],
+      "createdAt": "2026-09-16T14:00:00Z"
+    },
+    {
+      "id": "tree_spf",
+      "question": "do you wear SPF under your makeup?",
+      "contextQuestion": null,
+      "branches": [],
+      "flatAnswer": "every day. let it settle before you do your base — that's the bit everyone rushes x",
+      "autoSend": true,
+      "usedCount": 31,
+      "builtFrom": [
+        "SPF first. give it a minute before foundation x",
+        "every day, even if london has decided it's november again."
+      ],
+      "createdAt": "2026-09-16T14:00:00Z"
+    }
+  ],
+  "stats": {
+    "totalMessages": 4800,
+    "clustered": 3936,
+    "coveragePct": 82,
+    "savedAnswers": 6,
+    "hoursBefore": 70,
+    "hoursAfter": 8
+  },
+  "unansweredThemes": [
+    {
+      "label": "a tutorial for hooded eyes",
+      "count": 28
+    },
+    {
+      "label": "a makeup bag for under £50",
+      "count": 19
+    },
+    {
+      "label": "how to stop concealer creasing",
+      "count": 12
+    }
+  ]
+}
