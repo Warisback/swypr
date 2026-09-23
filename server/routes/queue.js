@@ -86,16 +86,16 @@ const PRESETS = {
     text: "dry!! like actually flaky rn",
   },
 };
-// Recorded-demo script (2026-09-20): each default press of L steps through this
-// sequence in order — barrier question, the same sender's "dry" reply, a glass
-// drop ask, then the honest off-map miss. R sends { reset: true } for retakes.
+// Demo script: default simulate calls step through this sequence in order —
+// barrier question, the same sender's "dry" reply, a glass drop ask, then the
+// honest off-map miss. Sending { reset: true } rewinds it and clears injections.
 const SCRIPT = ["barrier", "reply", "glassdrop", "offmap"];
 let scriptCursor = 0;
 let simCounter = 0;
 
 router.post("/api/simulate-incoming", async (req, res) => {
   if (req.body?.reset) {
-    // clean the stage for a retake: drop every injected message, rewind the script
+    // drop every injected message and rewind the script
     store.messages = store.messages.filter((m) => !String(m.sender?.id || "").startsWith("sim_"));
     scriptCursor = 0;
     persistMessages();

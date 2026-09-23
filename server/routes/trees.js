@@ -80,7 +80,6 @@ router.post("/api/trees", async (req, res) => {
   res.json(tree);
 });
 
-// founder-requested (2026-09-20): junk answers made during rehearsal need a way out
 router.delete("/api/trees/:id", async (req, res) => {
   const tree = getTree(req.params.id);
   if (!tree) return res.status(404).json({ error: "tree not found" });

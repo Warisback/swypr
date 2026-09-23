@@ -14,7 +14,7 @@
       }
     ],
     "flatAnswer": null,
-    "autoSend": true,
+    "autoSend": false,
     "usedCount": 17,
     "builtFrom": [
       "babe if your skin is dry you layer the barrier cream under the serum, winter especially",
@@ -28,7 +28,7 @@
     "contextQuestion": "what foundation are u in right now?",
     "branches": [],
     "flatAnswer": null,
-    "autoSend": true,
+    "autoSend": false,
     "usedCount": 22,
     "builtFrom": [
       "tell me what foundation you're in right now and i'll match you to my shade",
@@ -42,7 +42,7 @@
     "contextQuestion": null,
     "branches": [],
     "flatAnswer": "glass drop is good. not £62 good. the night serum at £42 does the same job — i'd get that instead",
-    "autoSend": true,
+    "autoSend": false,
     "usedCount": 9,
     "builtFrom": [
       "glass drop review, one line: good. not £62 good.",
@@ -111,7 +111,7 @@
       }
     ],
     "flatAnswer": null,
-    "autoSend": true,
+    "autoSend": false,
     "usedCount": 7,
     "builtFrom": [
       "wash your face, wait an hour, no products. tight = dry, shiny = oily. that's the whole test",

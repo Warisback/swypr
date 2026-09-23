@@ -1,56 +1,49 @@
-# SWYPR server
+# Swypr server
 
-Express on `localhost:3001`. No DB — JSON files in `server/data` are loaded at
-boot and written back on change. Contract lives in the build brief / ASTRA.md.
+Express on `localhost:3001`. No database — the JSON files in `server/data` are
+loaded into memory at boot and written back on change. The built frontend in
+`dist/` is served from the same port.
 
 ## Run
 
-```
-pnpm install          # once, from repo root (this repo is pnpm, not npm)
+```sh
+pnpm install          # once, from the repo root (pnpm workspace)
 pnpm run server       # or: pnpm run server:dev  (auto-restart on edit)
 ```
 
-## Reset the demo
+## Data files
 
-Stop the server and delete `server/data/messages.json` — it regenerates from
-`seed_messages.json` on next boot. `seed_messages.json` itself is read-only at
-runtime, so hand-edits to the seed corpus are safe (content pass, task C1).
-If trees were changed during rehearsal, restore `trees.json` too.
+- `seed_messages.json` — the inbox corpus, read-only at runtime
+- `products.json` — the product catalogue the matcher and voice rules draw from
+- `trees.json` — saved answers
+- `messages.json`, `draft_cache.json`, `webhook_log.json` — runtime state,
+  regenerated as needed and untracked. Delete `messages.json` and restart for
+  a fresh queue.
 
-## Env (.env at repo root)
+## Environment (.env at repo root)
 
-`ANTHROPIC_API_KEY` — optional. Without it every draft falls back to the raw
-tree text / clarifying question; the demo survives with zero LLM calls.
+`OPENAI_API_KEY` or `ANTHROPIC_API_KEY` — optional. Without a key every draft
+falls back to the saved answer text; the app works with zero LLM calls.
 `MODE=SIMULATE|LIVE`, `VERIFY_TOKEN`, `IG_ACCESS_TOKEN`, `IG_USER_ID`,
-`WHITELIST_IGSIDS` (comma-separated, copy from `data/webhook_log.json`),
-`IG_GRAPH_VERSION` (exact version from the Meta quickstart — don't guess).
-Env is read per request, but restart after edits to be safe.
+`WHITELIST_IGSIDS` (comma-separated tester ids, visible in
+`data/webhook_log.json` once DMs arrive), `IG_GRAPH_VERSION`.
 
-## ⚠ products.json is a best-effort reconstruction
-
-The case-file PDF wasn't in this repo. Glass Drop / Night Serum / Cloud Cream /
-Barrier Cream / Daily Gel match the brief; the other five are invented
-placeholders. **Task C2: replace with the case-file table word-for-word.**
-Product names feed the keyword matcher, so renames flow through automatically
-(known names are mapped in `lib/matching.js` → `PRODUCT_CLUSTER_MAP`).
-
-## Routes (all answer curl)
+## Routes
 
 - `GET  /api/health` → `{ ok, mode }`
 - `GET  /api/queue` → `{ messages, stats }` (unanswered first, newest live on top; never calls the LLM)
-- `GET  /api/clusters`, `GET /api/trees`, `GET /api/answer-bank`
-- `POST /api/trees` (tree without id → creates + re-matches unanswered)
-- `PATCH /api/trees/:id` (edits; flipping `autoSend` on sweeps ready drafts out as `auto_sent`)
+- `GET  /api/clusters` · `GET /api/trees` · `GET /api/answer-bank`
+- `POST /api/trees` (create + re-match unanswered) · `PATCH /api/trees/:id` (edits; enabling `autoSend` sweeps ready drafts) · `DELETE /api/trees/:id`
 - `POST /api/messages/:id/skip` | `/draft` (body `{context?}`) | `/send` (body `{text}`)
-- `POST /api/simulate-incoming` (body `{presetId?}` — `barrier`, `glassdrop`, `offmap`; no body cycles through them)
-- `GET/POST /webhook/instagram` (handshake / receiver — the only route to expose via ngrok)
+- `POST /api/simulate-incoming` (scripted demo sequence; body `{presetId?}` or `{reset: true}`)
+- `GET/POST /webhook/instagram` (Meta handshake / DM receiver — the only route that needs public exposure)
 
-Sends return the message plus a `delivery` field: `{ via, simulated, fallback?, error? }` —
+Sends return the message plus a `delivery` field (`{ via, simulated, fallback?, error? }`);
 a failed live send falls back to simulate and flags it there.
 
 ## LLM usage
 
-- Drafts: `claude-sonnet-5`, 3s timeout, falls back to raw branch text.
-- Classification: `claude-haiku-4-5-20251001` (auto-falls back to
-  `claude-haiku-4-5` on 404), live-source messages only, only when keywords miss.
-- Boot pre-generates seed drafts into `draft_cache.json` in the background.
+Drafts are rewritten into the creator's register with a 3-second timeout and a
+raw-text fallback; classification runs only for live-source messages when the
+keyword matcher misses. Seed drafts are pre-generated into `draft_cache.json`
+in the background at boot.

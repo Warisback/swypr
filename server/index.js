@@ -31,8 +31,8 @@ app.use(treeRoutes);
 app.use(sendRoutes);
 app.use(webhookRoutes);
 
-// Serve the built frontend so one ngrok tunnel to :3001 shows the whole app
-// on the phone (run `pnpm run build` after frontend changes).
+// Serve the built frontend so the whole app runs from this one port
+// (run `pnpm run build` after frontend changes).
 app.use(express.static(path.join(ROOT, "dist")));
 
 app.use((req, res) => {

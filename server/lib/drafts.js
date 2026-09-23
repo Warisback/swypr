@@ -22,8 +22,8 @@ export function llmAvailable() {
   return Boolean(process.env.ANTHROPIC_API_KEY || process.env.OPENAI_API_KEY);
 }
 
-// The team has no Anthropic key (2026-09-20): when only OPENAI_API_KEY is set,
-// LLM calls run through the OpenAI API with the same timeout + fallback rules.
+// Provider fallback: when only OPENAI_API_KEY is set, LLM calls run through
+// the OpenAI API with the same timeout + fallback rules as the Anthropic path.
 async function openaiText({ kind = "draft", system, user, maxTokens = 200, timeoutMs = 3000 }) {
   const key = process.env.OPENAI_API_KEY;
   if (!key) return null;

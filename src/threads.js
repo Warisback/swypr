@@ -1,5 +1,4 @@
-// Conversation helpers for the threading feature. Kept in a separate file so
-// the shared modules only need one-line, additive edits.
+// Conversation helpers: sender grouping and flattened thread history.
 
 // One card per person: keep the first (newest-sorted) unanswered message per sender.
 export function groupBySender(queue) {

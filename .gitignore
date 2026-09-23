@@ -2,6 +2,11 @@ node_modules/
 dist/
 .pnpm-store/
 .openai/
+
+# runtime state (regenerated at boot)
+server/data/messages.json
+server/data/draft_cache.json
+server/data/webhook_log.json
 .env
 .env.local
 .sites-runtime/
