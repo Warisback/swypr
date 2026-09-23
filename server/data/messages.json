@@ -382,7 +382,7 @@
     },
     "text": "i genuinely dont know my skin type, where do i start",
     "receivedAt": "2026-09-19T18:33:00Z",
-    "status": "unanswered"
+    "status": "skipped"
   },
   {
     "clusterId": "cluster_budget_dry",
@@ -396,7 +396,7 @@
     },
     "text": "dry skin starter kit under 60 quid??",
     "receivedAt": "2026-09-19T18:07:00Z",
-    "status": "unanswered"
+    "status": "skipped"
   },
   {
     "clusterId": "cluster_shade",
@@ -413,7 +413,7 @@
     },
     "text": "sorry to be that girl but foundation deets? 🙏",
     "receivedAt": "2026-09-19T17:40:00Z",
-    "status": "unanswered"
+    "status": "skipped"
   },
   {
     "clusterId": "cluster_cloud",
@@ -427,7 +427,7 @@
     },
     "text": "does cloud cream break u out? worth it?",
     "receivedAt": "2026-09-19T17:14:00Z",
-    "status": "unanswered"
+    "status": "skipped"
   },
   {
     "clusterId": "cluster_barrier",
@@ -467,7 +467,7 @@
     },
     "text": "thoughts on glass drop for oily skin?",
     "receivedAt": "2026-09-19T16:21:00Z",
-    "status": "unanswered"
+    "status": "skipped"
   },
   {
     "clusterId": "cluster_keep_one",
@@ -481,7 +481,7 @@
     },
     "text": "u can only keep one skincare item forever. go",
     "receivedAt": "2026-09-19T15:55:00Z",
-    "status": "unanswered"
+    "status": "skipped"
   },
   {
     "clusterId": "cluster_skin_type",
@@ -498,7 +498,7 @@
     },
     "text": "my skin is sensitive idk what type tho, can i use ur stuff",
     "receivedAt": "2026-09-19T15:29:00Z",
-    "status": "unanswered"
+    "status": "skipped"
   },
   {
     "clusterId": "cluster_budget_dry",
@@ -512,7 +512,7 @@
     },
     "text": "im dry + broke lol. best things under £60?",
     "receivedAt": "2026-09-19T15:02:00Z",
-    "status": "unanswered"
+    "status": "skipped"
   },
   {
     "clusterId": "cluster_routine",
@@ -529,7 +529,7 @@
     },
     "text": "simplest routine possible? i cannot do 10 steps",
     "receivedAt": "2026-09-19T14:36:00Z",
-    "status": "unanswered"
+    "status": "skipped"
   },
   {
     "clusterId": "cluster_first_date",
@@ -546,7 +546,7 @@
     },
     "text": "got a first date this week, need that glow asap",
     "receivedAt": "2026-09-19T14:10:00Z",
-    "status": "unanswered"
+    "status": "skipped"
   },
   {
     "clusterId": "cluster_glassdrop",
@@ -563,7 +563,7 @@
     },
     "text": "glass drop on payday or is that silly 💀",
     "receivedAt": "2026-09-19T13:43:00Z",
-    "status": "unanswered"
+    "status": "skipped"
   },
   {
     "clusterId": "cluster_cloud",
@@ -577,7 +577,7 @@
     },
     "text": "cloud cream vs literally any cheaper moisturiser, is it worth",
     "receivedAt": "2026-09-19T13:17:00Z",
-    "status": "unanswered"
+    "status": "skipped"
   },
   {
     "clusterId": "cluster_barrier",
@@ -594,7 +594,7 @@
     },
     "text": "got the night serum for xmas, do i need anything else with it",
     "receivedAt": "2026-09-19T12:51:00Z",
-    "status": "unanswered"
+    "status": "skipped"
   },
   {
     "clusterId": "cluster_keep_one",
@@ -608,7 +608,7 @@
     },
     "text": "had to pick one product for a desert island, which one",
     "receivedAt": "2026-09-19T12:24:00Z",
-    "status": "unanswered"
+    "status": "skipped"
   },
   {
     "clusterId": "cluster_shade",
@@ -625,7 +625,7 @@
     },
     "text": "the shade u wear looks perfect on camera whats the code",
     "receivedAt": "2026-09-19T11:58:00Z",
-    "status": "unanswered"
+    "status": "skipped"
   },
   {
     "clusterId": "cluster_skin_type",
@@ -642,7 +642,7 @@
     },
     "text": "skin type quiz says combo?? what does that even mean",
     "receivedAt": "2026-09-19T11:32:00Z",
-    "status": "unanswered"
+    "status": "skipped"
   },
   {
     "clusterId": "cluster_budget_dry",
@@ -656,7 +656,7 @@
     },
     "text": "student budget £60, skin so dry it hurts, help",
     "receivedAt": "2026-09-19T11:05:00Z",
-    "status": "unanswered"
+    "status": "skipped"
   },
   {
     "clusterId": "cluster_glassdrop",
@@ -673,7 +673,13 @@
     },
     "text": "everyone is on abt glass drop rn. verdict?",
     "receivedAt": "2026-09-19T10:39:00Z",
-    "status": "unanswered"
+    "status": "auto_sent",
+    "reply": {
+      "text": "glass drop is decent, but not worth £62. the night serum at £42 does the same thing — i'd go for that instead.",
+      "sentAt": "2026-09-20T18:14:40.637Z",
+      "via": "simulated",
+      "auto": true
+    }
   },
   {
     "clusterId": "cluster_barrier",
@@ -690,7 +696,7 @@
     },
     "text": "is the barrier cream ok for winter? my cheeks r struggling",
     "receivedAt": "2026-09-19T10:13:00Z",
-    "status": "unanswered"
+    "status": "skipped"
   },
   {
     "clusterId": "cluster_payday",
@@ -704,7 +710,7 @@
     },
     "text": "payday haul incoming. top pick?",
     "receivedAt": "2026-09-19T09:46:00Z",
-    "status": "unanswered"
+    "status": "skipped"
   },
   {
     "clusterId": "cluster_routine",
@@ -721,7 +727,7 @@
     },
     "text": "if my routine can only be 2 products what are they",
     "receivedAt": "2026-09-19T09:20:00Z",
-    "status": "unanswered"
+    "status": "skipped"
   },
   {
     "clusterId": "cluster_wwyb",
@@ -828,7 +834,7 @@
     "clusterId": "cluster_routine",
     "matchedTreeId": "tree_routine",
     "draft": {
-      "text": "milk cleanse, daily gel, glow veil spf. two minutes, out the door",
+      "text": "milk cleanse, daily gel, glow veil spf. two minutes, out the door.",
       "needsContext": false
     },
     "id": "msg_052",

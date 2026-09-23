@@ -42,8 +42,8 @@
     "contextQuestion": null,
     "branches": [],
     "flatAnswer": "glass drop is good. not £62 good. the night serum at £42 does the same job — i'd get that instead",
-    "autoSend": false,
-    "usedCount": 8,
+    "autoSend": true,
+    "usedCount": 9,
     "builtFrom": [
       "glass drop review, one line: good. not £62 good.",
       "night serum is the rebuy. £42 and it quietly outworks the hyped one"
@@ -111,7 +111,7 @@
       }
     ],
     "flatAnswer": null,
-    "autoSend": false,
+    "autoSend": true,
     "usedCount": 7,
     "builtFrom": [
       "wash your face, wait an hour, no products. tight = dry, shiny = oily. that's the whole test",
